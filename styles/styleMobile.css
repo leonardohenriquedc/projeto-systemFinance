@@ -1,1 +1,237 @@
 @charset "UTF-8";
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body, html{
+    width: 100vw;
+    height: 100vh;
+}
+
+body{
+    background-image: url(../midias/imagens/imgPredioMobile.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+
+/* Section tela de apresentação */
+
+/* telaApresentacao: Area do header*/
+section#telaApresentacao{
+    
+    flex-direction: column;
+}
+
+section#telaApresentacao > header{
+    background-color: black;
+    color: white;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 10px;
+}
+
+section#telaApresentacao > header > div#container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+section#telaApresentacao > header > div#container > h1{
+    font-style: italic;
+}
+
+section#telaApresentacao > header div#imageLogo{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: black;
+    background-image: url(../midias/imagens/LogoGorilaProduções.jpg);
+    background-position: center center;
+    background-size: cover;
+    
+}
+
+section#telaApresentacao > header > div.MobileMenuBurguer{
+    width: 60px;
+    height: 30px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+section#telaApresentacao > header > .MobileMenuBurguer > div.line{
+    width: 40px;
+    height: 5px;
+    background-color: white;
+    margin: 2px;
+}
+
+section#telaApresentacao > header > ul{
+    padding: 10px;
+    text-align: center;
+    position: absolute;
+    top: 160px;
+}
+
+section#telaApresentacao > header > ul > li{
+    list-style-type: none;
+    padding: 10px;
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    background-color: #0d2125b9;
+    margin: 3px;
+    border-radius: 7px;
+}
+
+section#telaApresentacao > header > ul > li:nth-child(3){
+    display: none;
+}
+
+section#telaApresentacao > header > ul > li:hover{
+    color: blue;
+}
+
+/* telaApresentacao: Area do main */
+
+section#telaApresentacao > main{
+    background-color: #0d2125b9;
+    height:calc(100vh - 150px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section#telaApresentacao > main > h1{
+    text-align: center;
+    font-size: 4rem;
+    text-shadow: 1px 1px 0px white;
+}
+
+
+
+
+/* section telaSobreNos */
+
+/*section telaSobreNos: Area do header*/
+
+section#telaSobreNos{
+    
+    flex-direction: column;
+}
+
+section#telaSobreNos > header{
+    background-color: black;
+    color: white;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 10px;
+}
+
+section#telaSobreNos > header > div#container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+section#telaSobreNos > header > div#container > h1{
+    font-style: italic;
+}
+
+section#telaSobreNos > header div#imageLogo{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: black;
+    background-image: url(../midias/imagens/LogoGorilaProduções.jpg);
+    background-position: center center;
+    background-size: cover;
+    
+}
+
+section#telaSobreNos > header > div.MobileMenuBurguer{
+    width: 60px;
+    height: 30px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+section#telaSobreNos > header > .MobileMenuBurguer > div.line{
+    width: 40px;
+    height: 5px;
+    background-color: white;
+    margin: 2px;
+}
+
+section#telaSobreNos > header > ul{
+    padding: 10px;
+    text-align: center;
+    position: absolute;
+    top: 160px;
+}
+
+section#telaSobreNos > header > ul > li{
+    list-style-type: none;
+    padding: 10px;
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    background-color: #0d2125b9;
+    margin: 3px;
+    border-radius: 7px;
+}
+
+section#telaSobreNos > header > ul > li:nth-child(3){
+    display: none;
+}
+
+section#telaSobreNos > header > ul > li:hover{
+    color: blue;
+}
+
+/* section telaSobreNos: area do main */
+
+section#telaSobreNos > main{
+     background-color: #0d2125b9;
+    height:calc(100vh - 150px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+section#telaSobreNos >main > article{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+section#telaSobreNos > main > article > h1{
+    text-align: center;
+    font-size: 2rem;
+    color: white;
+    text-shadow: 1px 1px 0px black;
+}
+
+section#telaSobreNos > main > article > p{
+    color: white;
+    text-align: justify;
+    text-indent: 10px;
+    width: 70%;
+}
