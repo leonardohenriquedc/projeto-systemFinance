@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/mobile-first.css">
+    <link rel="stylesheet" href="estilos/tablets.css">
+    <title>Login</title>
+</head>
+<body>
+    <main>
+        <div id="foto">
+        </div>
+        <div id="formulario">
+            <h1>
+                Seja Bem-Vindo (a)
+            </h1>
+            <p>
+                Faça login
+            </p>
+            <form action="ins.php" method="post" id="form">
+                <p class="pe">
+                    <label for="email" id="email-favicon">
+                            <!-- Aqui vai a foto "person-favicon" -->
+                    </label>
+                    <input type="email" name="email" id="email" placeholder="Digite seu email" required minlength="30">
+                </p>
+                <p class="pe">
+                    <label for="senha" id="senha-favicon">
+                         <!-- Aqui vai a foto "key-favicon" -->
+                    </label>
+                    <input type="password" name="senha" id="senha" placeholder="Digite sua senha" required minlength="8">
+                </p>
+                <div id="botoes">
+                    <p>
+                        <input type="submit" value="Entrar" id="entrar">
+                    </p>
+                    <p>
+                        <input type="button" value="Esqueci minha senha" id="redf">
+                    </p>
+                </div>
+            </form>
+        </div>
+    </main>
+</body>
+</html>

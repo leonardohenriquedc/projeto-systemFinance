@@ -1,0 +1,160 @@
+@charset "UTF-8";
+
+/*
+    Paleta de cores 
+        Foco das cores: roxo - azul
+            #5417EA - tons - roxo 
+            #594196 - tons - roxo
+            #5B33C0 - tons - roxo 
+            #1011EB - tons - azul 
+*/
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #5417EA;
+}
+
+main{
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 70%;
+    height: 500px;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0px 0px 6px black;
+    transition: width 0.7s, height 0.5s;
+    transition-timing-function: ease;
+    transform: translate(-50%, -50%);
+}
+
+#foto{
+    background-image: url(../imagens/Foto-setup.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height: 30vh;
+    display: block;
+}
+
+#fomulario{
+    display: block;
+    
+}
+
+#formulario > h1, p{
+    text-align: center;
+}
+
+#formulario > h1{
+    font-size: 3vw;
+    padding: 5px;
+}
+
+#formulario > p{
+    font-size: 2vw;
+    font-weight: bold;
+    text-align: center;
+}
+
+#email, #senha{
+    padding: 10px;
+    margin: 2px;
+    border: 1px solid black;
+}
+
+.pe{
+    margin: 5px auto;
+    width: 80%;
+    height: 30px;
+    font-size: 0px;
+    position: relative;
+    background-color: #5417EA;
+    text-align: center;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+#senha, #email{
+    height: 25px;
+    
+    width: calc(100% - 50px);
+    text-align: center;
+    border-radius: 7px;
+    transform: translateY(-25%);
+}
+
+#email-favicon, #senha-favicon{
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+    background-color: #5417EA;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transform: translateY(5%);
+    
+    
+}
+
+#email-favicon{
+    background-image: url("../imagens/person-favicon.png");
+}
+
+#senha-favicon{
+    background-image: url("../imagens/key-favicon.png");
+}
+
+#entrar, #redf{
+    width: 70%;
+    padding: 10px;
+    margin: 3px;
+    background-color: transparent;
+    border: 1px solid black;
+    font-weight: bolder;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#entrar{
+    background-color: #1010eb56;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#entrar:hover{
+    background-color: #5d10eb;
+    color: white;
+}
+
+#redf:hover{
+    background-color: #594196;
+    color: white;
+}
+
+@media screen and (max-height: 600px){
+    main{
+        height: 300px;
+    }
+
+    #botoes{
+        margin: auto;
+        text-align: center;
+    }
+
+    #botoes p{
+        display: inline-block;
+        width: 33vw;
+    }
+
+    #entrar, #redf{
+        font-size: 2vw;
+    }
+}
