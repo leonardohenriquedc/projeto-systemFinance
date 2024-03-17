@@ -59,7 +59,7 @@ section#telaApresentacao > header div#imageLogo{
     
 }
 
-section#telaApresentacao > header > div.MobileMenuBurguer{
+section#telaApresentacao > header > div.menuBurguer{
     width: 60px;
     height: 30px;
     display: grid;
@@ -68,7 +68,7 @@ section#telaApresentacao > header > div.MobileMenuBurguer{
     cursor: pointer;
 }
 
-section#telaApresentacao > header > .MobileMenuBurguer > div.line{
+section#telaApresentacao > header > .menuBurguer > div.line{
     width: 40px;
     height: 5px;
     background-color: white;
@@ -163,7 +163,7 @@ section#telaSobreNos > header div#imageLogo{
     
 }
 
-section#telaSobreNos > header > div.MobileMenuBurguer{
+section#telaSobreNos > header > div.menuBurguer{
     width: 60px;
     height: 30px;
     display: grid;
@@ -172,7 +172,7 @@ section#telaSobreNos > header > div.MobileMenuBurguer{
     cursor: pointer;
 }
 
-section#telaSobreNos > header > .MobileMenuBurguer > div.line{
+section#telaSobreNos > header > .menuBurguer > div.line{
     width: 40px;
     height: 5px;
     background-color: white;

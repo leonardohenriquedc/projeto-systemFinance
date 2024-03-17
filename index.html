@@ -21,11 +21,6 @@
                     System Finance
                 </h1>
             </div>
-            <div class="MobileMenuBurguer">
-                <div class="line"></div>
-                <div class="line"></div>
-                <div class="line"></div>
-            </div>
             <ul class="list" style="display: none;">
                 <li id="SobreNosTelaInical">
                     Sobre Nos
@@ -43,6 +38,11 @@
                     <!-- Aqui vai a palvra login ou Nome de usuario-->
                 </li>
             </ul>
+            <div class="menuBurguer">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
         </header>
         <main>
             <h1>
@@ -87,9 +87,9 @@
             </h1>
         </main>
     </section>
-    <nav id="paiMenuOptions" style="display: none;">
+    <nav id="paiMenuOptions" style="display: flex;" class="fora">
         <ul id="menuOptions">
-            <li>Frente de Caixa</li>
+            <li id="navFrenteCaixa">Frente de Caixa</li>
             <li>
                 <select name="relatoriosSelect" id="relatoriosSelect">
                     <option value="0" selected disabled>Relatorios</option>
@@ -97,7 +97,7 @@
                     <option value="2">Contas a receber</option>
                 </select>
             </li>
-            <li>Fluxo de Caixa</li>
+            <li id="navFluxoCaixa">Fluxo de Caixa</li>
         </ul>
     </nav>
     <section id="telaSobreNos" style="display: none;" class="">
@@ -109,11 +109,7 @@
                     System Finance
                 </h1>
             </div>
-            <div class="MobileMenuBurguer">
-                <div class="line"></div>
-                <div class="line"></div>
-                <div class="line"></div>
-            </div>
+            
             <ul class="list" style="display: none;">
                 <li id="LiTwo">
                     Sobre Nos
@@ -123,6 +119,11 @@
                     <!-- Aqui vai a palvra login ou Nome de usuario-->
                 </li>
             </ul>
+            <div class="menuBurguer">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
         </header>
         <main>
             <article>
@@ -141,12 +142,13 @@
     </section>
     <section id="frenteCaixa" style="display: none;" class="">
         <header>
-            <div id="imageLogo">
-
+            <div class="container">
+                <div id="imageLogo">
+                </div>
+                <h1>
+                    System Finance
+                </h1>
             </div>
-            <h1>
-                System Finance
-            </h1>
             <ul>
                 <li>
                     Sobre Nos
@@ -163,97 +165,87 @@
             </ul>
         </header>
         <main>
-            <article id="othersItens">
-                <div id="search">
+            <article id="aOne">
+                <div id="areaPesquisa">
                     <p>
                         Pesquisar
                     </p>
-                    <form id="rowOne">
-                        <div id="itemOne">
-                            <p>
-                                Codigo:
-                            </p>
-                            <input type="number" id="codigoNumber">
-                        </div>
-                        <div id="itemTwo">
-                            <p>
-                                Descrição:
-                            </p>
-                            <p id="nameProduct">
-                                <!-- Aqui vai o nome do produto -->
-                            </p>
-                        </div>
-                    </form>
+                    <div id="rowOne">
+                        <p>
+                            Codigo: 
+                        </p>
+                        <p>
+                            Descrição: 
+                        </p>
+                    </div>
                     <div id="rowTwo">
-                        <div id="quantidade">
-                            <p>
-                                Qtd: 
-                            </p>
-                            <p id="QtdProduct">
-                                <!-- Aqui vai a quantidade do produto -->
-                            </p>
-                        </div>
-                        <div id="precoUnit">
-                            <p>
-                                Preço Unit
-                            </p>
-                            <p id="numberUnit">
-                                <!-- Aqui vai o numero da quantidade -->
-                            </p>
-                        </div>
+                        <p>
+                            Qtd: 
+                        </p>
+                        <p>
+                            Preço Unit: 
+                        </p>
                     </div>
                     <button>
                         Adicionar
                     </button>
                 </div>
-
-                <div id="lastItem">
-                    <p>
-                        Ultimo Item adionado
-                    </p>
-                    <div id="lastProduct">
-                        <p id="lastNameProduct">
-                            <!-- Aqui vai o nome do produto -->
-                        </p>
-                        <p id="price">
-                            <!-- Aqui vai o preco do produto -->
-                        </p>
-                    </div>
-                    <div>
-                        <p id="barcode">
-                            <!-- Aqui vai o codigo de barras do produto -->
-                        </p>
-                        <p id="qtdItens">
-                            <!-- Aqui vai a quantidade do produto -->
-                        </p>
+                <div id="totalValue">
+                  <p>
+                    Total: 
+                  </p>
+                  <p>
+                    R$: 
+                  </p>
+                </div>
+                <div id="containerValues">
+                    <div id="totalReceived">
+                        <p>
+                            Total Recebido:
+                          </p>
+                          <p>
+                            R$:
+                          </p>
+                        </div>
+                    <div id="troco">
+                        <p>
+                            Troco:
+                          </p>
+                          <p>
+                            R$:
+                          </p>
                     </div>
                 </div>
-
-                <div id="codePurchase">
-                    <p id="numberPurchase">
-                        <!-- Aqui vai o codigo da compra -->
-                    </p>
+                </div>
+                <div id="codeCompra">
+                    <p>
+                        Codigo da Compra: 
+                      </p>
+                      <p>
+                        R$: 
+                      </p>
                 </div>
             </article>
-
-            <article id="productAndNumbers">
-                <div id="productList">
-                    <!--Aqui via a lista de produtos-->
-                </div>
-                <div id="total">
-                    <!-- Aqui vai o total dos produtos -->
-                </div>
-                <div id="valuesMoney">
-                    <div id="totalReceived">
-                        <div class="value">
-                            <!-- Aqui vai o valor numerico -->
-                        </div>
-                    </div>
-                    <div id="troco">
-                        <div class="value">
-                            <!-- Aqui vai o valor numerico -->
-                        </div>
-                    </div>
+            <article id="aTwo">
+                <h3>
+                    Lista de Produtos
+                </h3>
+                <div id="productItens">
+                    <p id="NItem">
+                        N° Item
+                    </p>
+                    <p id="codeProduct">
+                        Codigo
+                    </p>
+                    <p id="descriptionProduct">
+                        Descrição
+                    </p>
+                    <p id="qtd">
+                        Qtd
+                    </p>
+                    <p id="precoUnit">
+                        Preco Unit
+                    </p>
                 </div>
             </article>
         </main>

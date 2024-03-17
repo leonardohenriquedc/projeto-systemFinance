@@ -1,1 +1,596 @@
 @charset "UTF-8";
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body, html{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+body{
+    background-image: url(../midias/imagens/imgFundoDoc.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+
+/* Section tela Inicial */
+/* Area do header */
+section#telaApresentacao{
+    flex-direction: column;
+}
+
+section#telaApresentacao > header{
+    background-color: black;
+    width: 100%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+section#telaApresentacao div#container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 50vw;
+    
+}
+
+div#container > h1{
+    font-size: 3rem;
+}
+
+div#imageLogo{
+    width: 200px;
+    height: 200px;
+    background-image: url(../midias/imagens/LogoGorilaProduções.jpg);
+    background-position: center center;
+    background-size: cover;
+    border-radius: 50%;
+}
+
+section#telaApresentacao div.menuBurguer{
+    width: 60px;
+    height: 30px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+section#telaApresentacao div.menuBurguer > div.line{
+    width: 40px;
+    height: 5px;
+    background-color: white;
+    margin: 2px;
+}
+
+/* Area do main */
+
+section#telaApresentacao > main{
+    background-color: #0d2125b9;
+    height:calc(100vh - 200px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section#telaApresentacao > main > h1{
+    text-align: center;
+    font-size: 4rem;
+    text-shadow: 1px 1px 0px white;
+}
+
+#iconContato{
+    background-image: url(../midias/favicon/pessoaIcon.png);
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: white;
+    border-radius: 7px;
+    width: 30px;
+    height: 30px;
+    color: white;
+}
+
+section#telaApresentacao ul{
+    gap: 30px;
+}
+
+section#telaApresentacao ul > li{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+
+section#telaApresentacao ul > li:hover{
+    color: blue;
+}
+
+/* Area do nav */
+
+nav#paiMenuOptions{
+    position: absolute;;
+}
+
+nav#paiMenuOptions > ul{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15vh;
+    color: white;
+}
+
+nav#paiMenuOptions > ul > li{
+    list-style-type: none;
+    font-size: 3rem;
+}
+
+nav#paiMenuOptions > ul > li:hover{
+    text-shadow: 0px 0px 5px rgb(23, 99, 161);
+    cursor: pointer;
+}
+
+nav#paiMenuOptions > ul > li:nth-child(2){
+    width: 70%;
+}
+
+nav#paiMenuOptions > ul > li select{
+    width: 100%;
+    height: 50px;
+    background-color: #00000080;
+    color: white;
+    text-align: center;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+nav#paiMenuOptions > ul > li select option{
+    background-color: black;
+}
+
+.fora{
+    top: 200px;
+    left: 110%;
+    width: 400px;
+    height: calc(100vh - 200px);
+    background-color: #00000057;
+    align-items: center;
+    justify-content: center;
+
+    /* animation */
+
+    animation-name: navAnimationFora;
+    animation-duration: 1s;
+}
+
+@keyframes navAnimationFora {
+    0%{
+        left: calc(100% - 400px);
+    }
+    100%{
+        left: 110%;
+    }
+}
+
+.dentro{
+    top: 200px;
+    left: calc(100% - 400px);
+    width: 400px;
+    height: calc(100vh - 200px);
+    background-color: #00000057;
+    align-items: center;
+    justify-content: center;
+
+    /* animation: ;*/
+
+    animation-name: navAnimationDentro;
+    animation-duration: 1s;
+}
+
+@keyframes navAnimationDentro {
+    0%{
+        left: 110%;
+    }
+    100%{
+        left: calc(100% - 400px);
+    }
+}
+
+/* section SobreNos */
+
+section#telaSobreNos{
+    flex-direction: column;
+}
+
+section#telaSobreNos > header{
+    background-color: black;
+    width: 100%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+section#telaSobreNos div#container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 50vw;
+    
+}
+
+div#container > h1{
+    font-size: 3rem;
+}
+
+div#imageLogo{
+    width: 200px;
+    height: 200px;
+    background-image: url(../midias/imagens/LogoGorilaProduções.jpg);
+    background-position: center center;
+    background-size: cover;
+    border-radius: 50%;
+}
+
+section#telaSobreNos div.menuBurguer{
+    width: 60px;
+    height: 30px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+section#telaSobreNos div.menuBurguer > div.line{
+    width: 40px;
+    height: 5px;
+    background-color: white;
+    margin: 2px;
+}
+
+#iconContato{
+    background-image: url(../midias/favicon/pessoaIcon.png);
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: white;
+    border-radius: 7px;
+    width: 30px;
+    height: 30px;
+    color: white;
+}
+
+/* Area do main */
+
+section#telaSobreNos > main{
+    background-color: #0d2125b9;
+    height:calc(100vh - 200px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section#telaSobreNos > main > h1{
+    text-align: center;
+    font-size: 4rem;
+    text-shadow: 1px 1px 0px white;
+}
+
+section#telaSobreNos ul{
+    gap: 30px;
+}
+
+section#telaSobreNos ul > li{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+
+section#telaSobreNos ul > li:hover{
+    color: blue;
+}
+
+/* section sobreNos area do main  */
+
+section#telaSobreNos > main{
+    background-color: #0d2125b9;
+   height:calc(100vh - 150px);
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+section#telaSobreNos >main > article{
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+   align-items: center;
+   justify-content: center;
+}
+
+section#telaSobreNos > main > article > h1{
+   text-align: center;
+   font-size: 2rem;
+   color: white;
+   text-shadow: 1px 1px 0px black;
+}
+
+section#telaSobreNos > main > article > p{
+   color: white;
+   text-align: justify;
+   text-indent: 10px;
+   width: 70%;
+   font-size: 2rem;
+}
+
+/* sectionfrente de caixa */
+
+/* area do header */
+
+section#frenteCaixa{
+    flex-direction: column;
+}
+
+section#frenteCaixa > header{
+    background-color: black;
+    width: 100%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+section#frenteCaixa div.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 60vw;
+}
+
+div.container > h1{
+    font-size: 3rem;
+}
+
+div#imageLogo{
+    width: 200px;
+    height: 200px;
+    background-image: url(../midias/imagens/LogoGorilaProduções.jpg);
+    background-position: center center;
+    background-size: cover;
+    border-radius: 50%;
+}
+
+section#frenteCaixa .menuBurguer{
+    width: 60px;
+    height: 30px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+section#frenteCaixa .menuBurguer > div.line{
+    width: 40px;
+    height: 5px;
+    background-color: white;
+    margin: 2px;
+}
+
+section#frenteCaixa ul{
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+}
+
+section#frenteCaixa ul > li{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+    font-size: 1.8rem;
+}
+
+section#frenteCaixa ul > li:nth-child(1){
+    display: none;
+}
+
+section#frenteCaixa ul > li:hover{
+    color: blue;
+}
+
+/* Area do main */
+
+section#frenteCaixa > main{
+    background-color: #0d2125b9;
+    height:calc(100vh - 200px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section#frenteCaixa > main > {
+
+}
+
+
+/* section Frente de caixa: main */
+
+section#frenteCaixa main{
+    display: flex;
+    justify-content: space-around;
+}
+
+section#frenteCaixa article#aOne, article#aTwo{
+    width: 50vw;
+    height: 80%;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Article One */
+article#aOne div#areaPesquisa{
+    background-color: #13285F;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    gap: 10px;
+    border-radius: 7px;
+    overflow: hidden;
+    border: 1px solid black;
+}
+
+div#areaPesquisa > p{
+    font-size: 1.5rem;
+    color: white;
+}
+
+div#areaPesquisa > div#rowOne, div#rowTwo{
+    background-color: #666565;
+    width: 90%;
+    margin: 5px;
+    display: flex;
+    justify-content: space-around;
+    padding: 15px;
+    border-radius: 30px;
+}
+
+div#areaPesquisa > div#rowOne, div#rowTwo p{
+    font-weight: bold;
+}
+
+div#areaPesquisa > button{
+    width: 100%;
+    height: 30px;
+    font-size: 1.3rem;
+    font-weight: bold;
+    background-color: #666565;
+    cursor: pointer;
+}
+
+div#totalValue{
+    background-color: #13285F;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 7px;
+    overflow: hidden;
+}
+
+div#totalValue > p:nth-child(1){
+    width: 100%;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 7px;
+}
+
+div#totalValue > p:nth-child(2){
+    background-color: white;
+    width: 100%;
+    text-align: center;
+    padding:15px;
+    font-size: 1.5rem;
+    font-weight: bolder;
+}
+
+div#containerValues{
+    display: flex;
+    justify-content: space-between;
+}
+
+div#totalReceived, div#troco{
+    background-color: white;
+    width: 49%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 7px;
+    overflow: hidden;
+
+}
+
+div#totalReceived p:nth-child(1), div#troco p:nth-child(1){
+    background-color: #13285F;
+    width: 100%;
+    text-align: center;
+    padding: 7px;
+    font-weight: bolder;
+    font-size: 1.5rem;
+    color: white;
+}
+
+div#totalReceived p:nth-child(2), div#troco p:nth-child(2){
+    padding: 7px;
+    font-size: 1.2rem;
+    font-weight: bolder;
+}
+
+div#codeCompra{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 7px;
+    overflow: hidden;
+}
+
+div#codeCompra p:nth-child(1){
+    background-color: #13285F;
+    width: 100%;
+    padding: 10px;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+div#codeCompra p:nth-child(2){
+    padding: 10px;
+    font-weight: bolder;
+    font-size: 1.5rem;
+}
+
+/* Article Two */
+
+section#frenteCaixa article#aTwo{
+    background-color: white;
+}
+
+
+article#aTwo > h3{
+    background-color: #13285F;
+    padding: 10px;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 1.6rem;
+    color: white;
+}
+
+article#aTwo > div#productItens{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
