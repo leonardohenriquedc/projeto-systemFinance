@@ -1,4 +1,4 @@
-let mobileMenuBurger = document.getElementsByClassName("MobileMenuBurguer");
+let mobileMenuBurger = document.getElementsByClassName("menuBurguer");
 let listUl = document.getElementsByClassName("list");
 
 let listLiOne = document.getElementById('SobreNosTelaInical');

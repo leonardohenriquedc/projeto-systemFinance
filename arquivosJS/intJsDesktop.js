@@ -33,15 +33,14 @@ for (const menusBurguer of menuBurger) {
     menusBurguer.addEventListener('click', menuLateral)
 }
 
+
 function openFrenteCaixa() {
-    if (sectionFrenteCaixa.style.display === 'none' && sectionTelaApresentacao2.style.display === 'flex') {
+    if (sectionFrenteCaixa.style.display === 'none' &&
+        sectionTelaApresentacao2.style.display === 'flex'
+    ) {
         sectionFrenteCaixa.style.display = 'flex';
         sectionTelaApresentacao2.style.display = 'none';
     }
-    else {
-        sectionFrenteCaixa.style.display = 'none';
-        sectionTelaApresentacao2.style.display = 'flex';
-      }
 }
 
 navButtonFrenteCaixa.addEventListener('click', openFrenteCaixa)
