@@ -3,7 +3,7 @@ let entrar = document.getElementById('entrar');
 let formdata = document.querySelector('#form');
 
 entrar.addEventListener('click', () => {
-    window.location.href = '../index.html';
+    window.location.href = 'https://leonardohenriquedc.github.io/projeto-systemFinance/';
     console.log('ta funcionando caralho');
     event.preventDefault();
 }) 

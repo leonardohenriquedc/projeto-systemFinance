@@ -103,7 +103,7 @@ class Transicoes {
 
 // redirections
     static redirectionAccount() {
-        window.location.assign('../telaLogin/loginTela.html')
+        window.location.assign('https://leonardohenriquedc.github.io/projeto-systemFinance/telaLogin/loginTela.html.html');
     }
 
     static redirectionContact() {
