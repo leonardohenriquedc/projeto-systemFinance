@@ -3,8 +3,15 @@
 
 /* Configuração para tablets */
 @media screen and (min-width: 798px) and (max-width: 992px) {
+    html{
+        background-image: url(../imagens/foto2.jpg);
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
     body{
-        background-color: #5B33C0;
+        background-color: #1c2a4e91;
     }
 
     main{
@@ -44,8 +51,15 @@
 /* Configuração para telas grandes */
 @media screen and (min-width: 992px){
 
+    html{
+        background-image: url(../imagens/foto2.jpg);
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
     body{
-        background-color: #1011EB;
+        background-color: #1c2a4e91;
     }
 
     main{

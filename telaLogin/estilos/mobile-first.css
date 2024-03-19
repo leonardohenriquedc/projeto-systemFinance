@@ -16,8 +16,17 @@
     box-sizing: border-box;
 }
 
+html{
+    background-image: url(../imagens/foto2.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
 body{
-    background-color: #5417EA;
+    background-color: #0f1220b0;
+    height: 100vh;
+    
 }
 
 main{
@@ -36,7 +45,7 @@ main{
 }
 
 #foto{
-    background-image: url(../imagens/Foto-setup.jpg);
+    background-image: url(../imagens/foto1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
