@@ -5,13 +5,14 @@ let listLiOne = document.getElementById('SobreNosTelaInical');
 let listLiTwo = document.querySelector("#LiTwo");
 let listLiThree = document.querySelector('#listLiThree')
 let contato = document.getElementById('contact');
-let screenLogin = document.getElementsByClassName('screenLogin')
+let screenLogin = document.getElementsByClassName('screenLogin');
+let headerRelatorios = document.getElementById('headerRelatorios');
 
 let navMenuLateral = document.getElementById('paiMenuOptions');
 let navButtonFrenteCaixa = document.querySelector('#navFrenteCaixa');
 let navButtonFluxoCaixa = document.querySelector('#navFluxoCaixa');
 
-let selectValue = document.querySelector('relatoriosSelect');
+let selectValue = document.querySelector('#relatoriosSelect');
 let sectionFrenteCaixa = document.querySelector('#frenteCaixa');
 let sectionTelaApresentacao = document.querySelector('#telaApresentacao');
 let sectionTelaSobreNos = document.querySelector('#telaSobreNos');
@@ -21,6 +22,7 @@ let subSectionPlanoContas = document.getElementById('planoContas');
 let subSectionContasPagarReceber = document.getElementById('contarPagarEReceber');
 let subArticleContasPagar = document.getElementById('contasPagar');
 let subArticleContasReceber = document.getElementById('contasReceber');
+let subsReport = document.getElementsByClassName('reportSubs');
 
 class Transicoes {
 
@@ -112,8 +114,10 @@ class Transicoes {
 }
 
 // relatorios
-class Relatorios extends Transicoes{
+class Relatorios extends Transicoes {
 
+
+    // front box interaction: 
     static returnPageMain() {
         sectionFrenteCaixa.style.display = 'none';
         sectionTelaApresentacao.style.display = 'flex';
@@ -133,10 +137,18 @@ class Relatorios extends Transicoes{
         }
     }
 
+    // Reports interactions:
+    static returnPageMainReports() {
+        
+    }
+    
+    static reportsInteraction() {
+    
+    }
+    
 }
 
 // Menu Burguer Validation:
-    
 function validationTypeMenuBurguer() {
     if (window.innerWidth <= 600) {
         Transicoes.interactionMenuBurguerMobile();
@@ -155,7 +167,7 @@ listLiThree.addEventListener('click', Relatorios.returnPageMain)
 
 contato.addEventListener('click', Transicoes.redirectionContact);
 
-navButtonFrenteCaixa.addEventListener('click', Relatorios.frenteCaixa)
+navButtonFrenteCaixa.addEventListener('click', Relatorios.frenteCaixa);
 
 for (const screensLogin of screenLogin) {
     screensLogin.addEventListener('click', Transicoes.redirectionAccount)

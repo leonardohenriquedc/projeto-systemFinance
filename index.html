@@ -96,7 +96,7 @@
                     <option value="2">Contas a receber</option>
                 </select>
             </li>
-            <li id="navFluxoCaixa">Fluxo de Caixa</li>
+            <li id="navFluxoCaixa">Plano de Contas</li>
         </ul>
     </nav>
     <section id="telaSobreNos" style="display: none;" class="">
@@ -250,7 +250,30 @@
         </main>
     </section>
     <section id="relatorios" style="display: none;" class="">
-        <section id="planoContas" class="">
+        <header>
+            <div class="container">
+                <div id="imageLogo">
+                </div>
+                <h1>
+                    System Finance
+                </h1>
+            </div>
+            <ul>
+                <li id="listLiFour">
+                    Sobre Nos
+                </li>
+                <li class="screenLogin">
+                    Login/User
+                    <!-- Aqui vai a palvra login ou Nome de usuario-->
+                </li>
+                <li class="menuBurguer">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </li>
+            </ul>
+        </header>
+        <section id="planoContas" style="display: none;" class="reportSubs">
             <div id="accontNumber">
                 <p>
                     N° Conta
@@ -280,8 +303,8 @@
                 </p>
             </div>
         </section>
-        <section id="contasPagarEReceber" class="">
-            <article id="contasPagar" class="">
+        <section id="contasPagarEReceber" style="display: none;" class="reportSubs">
+            <article id="contasPagar" style="display: none;" class="reportSubs">
                 <h2>
                     A pagar
                 </h2>
@@ -318,7 +341,7 @@
                     </div>
                 </div>
             </article>
-            <article id="contasReceber" class="">
+            <article id="contasReceber" style="display: none;" class="reportSubs">
                 <h2>
                     A receber
                 </h2>
