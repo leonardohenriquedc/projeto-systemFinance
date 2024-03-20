@@ -137,6 +137,8 @@ class Relatorios extends Transicoes {
         }
     }
 
+
+    // Obsolete area
     // Reports interactions:
     static returnPageMainReports() {
         
@@ -145,6 +147,7 @@ class Relatorios extends Transicoes {
     static reportsInteraction() {
     
     }
+    // ----------------------
     
 }
 
